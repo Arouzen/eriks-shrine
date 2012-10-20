@@ -16,12 +16,14 @@
             }
 
             #shrine {
-                margin: 10% auto;
-                width: 50%;
+                margin: 5% auto;
+                padding: 0;
+                width: 800px;
+                height: 600px;
             }
 
             #erik {
-                border: 10px solid yellow;
+                border: 5px solid yellow;
                 border-radius: 5px;
             }
 
@@ -35,7 +37,7 @@
             .sorround_torch {
                 position: relative;
                 bottom: -10%;
-                width: 10%;
+                width: 8%;
                 height: 35%;
             }
 
@@ -46,7 +48,20 @@
                 right: 0px;
             }
 
+            #tribute {
+                margin: 0;
+                height: 10%;
+            }
+
             #disclaimer {
+                position: absolute;
+                bottom: 0;
+                left: 5%;
+                right: 5%;
+                width: 90%;
+
+                margin: 0;
+                padding: 0 0 1%;
                 font-size: small;
             }
         </style>
@@ -54,12 +69,14 @@
     <body>
         <img src="left.gif" class="sidetorch" id="left" />
         <img src="right.gif" class="sidetorch" id="right" />
-        <p id="shrine">
-            <img src="torch.gif" class="sorround_torch">
-            <img id="erik" src="erik.jpg">
-            <img src="torch.gif" class="sorround_torch">
-        </p>
-        <p>Leve Erik Leander, v&aring;r evige klassmorfar!<p>
+        <div id="shrine">
+            <p>
+                <img src="torch.gif" class="sorround_torch">
+                <img id="erik" src="erik.jpg">
+                <img src="torch.gif" class="sorround_torch">
+            </p>
+            <p id="tribute">Leve Erik Leander, v&aring;r evige klassmorfar!<p>
+        </div>
         <p id="disclaimer">P&aring;hittat av elever i NV10A</p>
     </body>
 </html>
