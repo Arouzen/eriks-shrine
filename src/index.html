@@ -65,7 +65,22 @@
                 padding: 0 0 1%;
                 font-size: small;
             }
+			
+            #player {
+                display: none;
+            }
         </style>
+        <script type="text/javascript">
+        <!--
+        function toggle_player() {
+            var song = document.getElementById("player");
+            if (song.paused)
+                song.play();
+            else
+                song.pause();
+        }
+        //-->
+        </script>
     </head>
     <body>
         <img src="left.gif" class="sidetorch" id="left" />
@@ -77,6 +92,10 @@
                 <img src="torch.gif" class="sorround_torch">
             </p>
             <p id="tribute">Leve Erik Leander, v&aring;r evige klassmorfar!<p>
+            <a href="#" onclick="toggle_player();">Trololo</a>
+            <audio id="player" controls="controls" autoplay="autoplay">
+                <source src="gagnam.mp3" type="audio/mp3">
+            </audio>
         </div>
         <p id="disclaimer">P&aring;hittat av elever i NV10A</p>
     </body>
